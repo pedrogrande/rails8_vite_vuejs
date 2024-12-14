@@ -1,0 +1,14 @@
+<h1>Public#home</h1>
+<p>Find me in app/views/public/home.html.erb</p>
+<%=
+  content_tag(
+    :div,
+    id: 'appProps',
+    data: {
+      props: {
+        msg: @msg
+      }
+    }.as_json
+  ) {}
+%>
+<div id="app"></div>
